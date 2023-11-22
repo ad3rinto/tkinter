@@ -1,9 +1,10 @@
-import math
+
 from tkinter import *
 
 window = Tk()
 window.title("Mile to Km Converter")
 window.minsize(width=400, height=200)
+window.config(pady=20, padx=20)
 
 
 def calculate():
@@ -12,7 +13,7 @@ def calculate():
     answer_label["text"] = kilo
 
 
-user_input = Entry(width=10, font=("Arial", 24))
+user_input = Entry(width=7, font=("Arial", 24))
 user_input.insert(END, "0")
 user_input.grid(column=1, row=0)
 
