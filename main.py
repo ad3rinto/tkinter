@@ -11,6 +11,7 @@ my_label.pack()
 
 # Entry component
 board_input = Entry(width=10)
+board_input.insert(END, "Email: ")
 board_input.pack()
 
 
@@ -21,5 +22,10 @@ def button_clicked():
 
 button = Button(text="Click Me", command=button_clicked)
 button.pack()
+
+text = Text(height=5, width=30)
+text.focus()
+text.pack()
+
 
 window.mainloop()
